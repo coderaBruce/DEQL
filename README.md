@@ -1,6 +1,5 @@
 # Neurips2025_GQLAE
-Neurips2025_GQLAE:GQLAEs: A Generalized Quadratic Loss Framework for Linear Autoencoder-Based Recommendation
-
+ICLR2026: DEQL
 ## For use put data parallel to this folder.
 
 ## dataset could be downloaded from:
