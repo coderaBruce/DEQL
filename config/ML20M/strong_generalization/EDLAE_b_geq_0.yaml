@@ -1,0 +1,35 @@
+# Config Template
+
+dataset: ML20M
+log_name: EDLAE_b_geq_0
+save_dir: ./saved_model/ML20M/EDLAE_b_geq_0/strong_generalization
+log_dir: ./saved_log/ML20M/EDLAE_b_geq_0/strong_generalization
+
+needs_train: False
+pre_process: 'strong_generalization'
+
+
+
+hyper_params:
+    a: [1.0]
+    b: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    p: [0.1, 0.25, 0.33, 0.5, 0.8, 0.9]
+
+
+dataset_config:
+    leave_out:
+        ML20M:
+            train: ../data/processed_data/leave_out/ML20M/train.csv
+            valid: ../data/processed_data/leave_out/ML20M/valid.csv
+            test: ../data/processed_data/leave_out/ML20M/test.csv
+            sid: ../data/processed_data/leave_out/ML20M/unique_sid.txt
+
+    strong_generalization:
+        ML20M:
+            train: ../data/processed_data/strong_generalization/ML20M/train.csv
+            valid_tr: ../data/processed_data/strong_generalization/ML20M/validation_tr.csv
+            valid_te: ../data/processed_data/strong_generalization/ML20M/validation_te.csv
+            test_tr: ../data/processed_data/strong_generalization/ML20M/test_tr.csv
+            test_te: ../data/processed_data/strong_generalization/ML20M/test_te.csv
+            sid: ../data/processed_data/strong_generalization/ML20M/unique_sid.txt
+    
