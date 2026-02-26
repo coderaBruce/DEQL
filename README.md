@@ -1,5 +1,4 @@
-# Neurips2025_GQLAE
-ICLR2026: DEQL
+## ICLR2026: DEQL
 ## For use put data parallel to this folder.
 
 ## dataset could be downloaded from:
@@ -10,4 +9,4 @@ Before use, please put data in to corresponding dirctory according to config fil
 python run_parallel.py --config_path "./config/ML20M/strong_generalization/EDLAE_b_geq_0_diag0_L2const.yaml" --gpu 0 --isValidationPhase False --key 98765  --note ML20M
 
 
-# ICLR2026_DEQL_new
+
