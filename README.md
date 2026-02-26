@@ -1,4 +1,4 @@
-## ICLR2026: DEQL
+## Official Repo for ICLR2026: Generalizing Linear Autoencoder Recommenders with Decoupled Expected Quadratic Loss
 ## For use put data parallel to this folder.
 
 ## dataset could be downloaded from:
